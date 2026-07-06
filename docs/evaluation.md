@@ -1,7 +1,9 @@
 # Evaluation report
 
-Evaluation date: July 7, 2026  
-Model: `gemini-flash-latest` on Vertex AI  
+Evaluation date: July 7, 2026
+
+Model: `gemini-flash-latest` on Vertex AI
+
 Dataset: `tests/eval/datasets/basic-dataset.json`
 
 ## Cases
