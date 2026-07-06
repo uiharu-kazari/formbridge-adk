@@ -1,0 +1,9 @@
+metrics_to_run:
+  - formbridge_contract
+  - custom_response_quality
+
+custom_metrics:
+  - name: formbridge_contract
+    custom_function_file: contract_metrics.py
+  - name: custom_response_quality
+    custom_function_file: metrics.py
