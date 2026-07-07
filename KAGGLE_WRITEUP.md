@@ -2,7 +2,9 @@
 
 **Track:** Agents for Good
 
-**Source:** `https://github.com/uiharu-kazari/formbridge-adk` (private, as requested)
+**Source:** `https://github.com/uiharu-kazari/formbridge-adk`
+
+**Public demo:** `https://formbridge-demo-public-maqob3nldq-ue.a.run.app/demo`
 
 ## The problem
 
@@ -58,7 +60,7 @@ The deterministic metric checks citations, conflict status, missing status, vali
 
 The agent uses `gemini-flash-latest` on Vertex AI. Local authentication uses a short-lived token from `gcloud`; the deployment uses Cloud Run workload identity. The standard Google Agents CLI scaffold provides FastAPI, ADK SSE, A2A, telemetry, tests, and deployment structure.
 
-The authenticated Cloud Run service is live at `https://formbridge-adk-maqob3nldq-ue.a.run.app`; both ADK SSE and A2A calls were verified against the deployed revision.
+The authenticated live Cloud Run agent is deployed at `https://formbridge-adk-maqob3nldq-ue.a.run.app`; both ADK SSE and A2A calls were verified against the deployed revision. A separate public replay-only demo is available at `https://formbridge-demo-public-maqob3nldq-ue.a.run.app/demo`, with prepared synthetic examples and agent execution routes disabled to avoid public quota abuse.
 
 ## Limitations and next steps
 

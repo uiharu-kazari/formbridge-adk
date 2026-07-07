@@ -4,9 +4,15 @@
 
 FormBridge is a proof-carrying, privacy-preserving public-benefit paperwork copilot built for the **Agents for Good** track of Google's 5-Day AI Agents Intensive Vibe Coding Capstone. It converts synthetic application packets into a reviewable field-by-field draft with exact citations, contradiction flags, minimal clarification questions, and a mandatory human-review gate.
 
-Private source repository: `https://github.com/uiharu-kazari/formbridge-adk`
+Public source repository: `https://github.com/uiharu-kazari/formbridge-adk`
 
 It never determines eligibility and never submits an application.
+
+Public replay-only demo: `https://formbridge-demo-public-maqob3nldq-ue.a.run.app/demo`
+
+The public demo replays prepared synthetic examples only. It does not call Gemini,
+does not invoke the live agent, and blocks execution routes such as `/run_sse`.
+The live Cloud Run agent remains authenticated-only to avoid public quota abuse.
 
 ## What the demo proves
 
@@ -62,6 +68,10 @@ agents-cli playground
 An authenticated Cloud Run deployment is serving ADK SSE and A2A at:
 
 `https://formbridge-adk-maqob3nldq-ue.a.run.app`
+
+A separate public replay-only Cloud Run service is available at:
+
+`https://formbridge-demo-public-maqob3nldq-ue.a.run.app/demo`
 
 ```bash
 agents-cli run \
